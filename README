@@ -1,0 +1,23 @@
+En la carpeta Ising/ se encuentran los archivos fuentes y ejecutables del programa
+
+Para correr correctamente el programa, se debe hacer:
+1) Crear una carpeta llamada Ising_LxL donde L sea el tamaño de la red
+2) Destro de esa carpeta deben existir tres archivos:
+	input.dat : Contiene los parametros del sistema (Num de pasos, L, Temp, J)
+	send_job_temp.sh : es el script para ejecutar el programa. Dentro de el se setea el rango de temperatura que se desea trabajar
+	send_job.sh : Es el encargado de ejecutar N iteraciones para una misma temperatura
+
+3) Modificar en input.dat el numero de pasos, el tamaño del la red y el J . La temperatura se modifica automaticamente son send_job_temp.sh
+4) Modificar en send_job_temp.sh el rango de temperaturas que se desea 
+5) Modificar en send_job.sh la variable "njob" que indica la cantidad de corridas para una misma Temperatura
+6) Ejecutar send_job_temp.sh
+
+Repetir esto para cada tamaño de red
+
+Luego para obtener los datos para cada red y temperatura ejecutar Analisis.sh directamente donde se encuentra. Deberia obtenerse 3 archivos por cada red:
+	1)Energia_Ising_LxL.dat : Contiene los valores de <E> y <E^2> y sus errores para cada temp  
+
+	2)Mag_Ising_LxL.dat : Contiene los valores de <M> y <M^2> y sus errores para cada temp  
+
+	3)Aceptados_Ising_LxL.dat : Contiene los valores del porcentaje de Aceptados/PasosMC para cada temp  
+
