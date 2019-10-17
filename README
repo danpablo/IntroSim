@@ -15,9 +15,14 @@ Para correr correctamente el programa, se debe hacer:
 Repetir esto para cada tamaño de red
 
 Luego para obtener los datos para cada red y temperatura ejecutar Analisis.sh directamente donde se encuentra. Deberia obtenerse 3 archivos por cada red:
-	1)Energia_Ising_LxL.dat : Contiene los valores de <E> y <E^2> y sus errores para cada temp  
+	1)Energia_Ising_LxL.dat : Contiene los valores de <E> y <E^2> y sus errores para cada temp tabulados de la siguiente forma:
+		Temp |   <E>   |  err<E>  |  <E^2>  |  err<E^2>
 
 	2)Mag_Ising_LxL.dat : Contiene los valores de <M> y <M^2> y sus errores para cada temp  
 
+		Temp |   <M>   |  err<M>  |  <M^2>  |  err<M^2>
+
 	3)Aceptados_Ising_LxL.dat : Contiene los valores del porcentaje de Aceptados/PasosMC para cada temp  
+
+		Temp |   Aceptados   |  errAceptados
 
